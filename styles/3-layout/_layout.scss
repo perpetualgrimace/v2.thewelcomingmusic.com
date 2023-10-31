@@ -1,0 +1,38 @@
+.main {
+  overflow-x: hidden;
+}
+
+.wrapper {
+	max-width: 1060px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $sp-md;
+	padding-right: $sp-md;
+
+  @media (min-width: 900px) {
+    padding-left: $sp-xl;
+    padding-right: $sp-xl;
+  }
+
+	& > :first-child {
+		z-index: 1;
+	}
+}
+
+.fullscreen-section {
+  min-height: calc(100vh - #{$navbar-height});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: $sp-xl;
+  padding-bottom: $sp-xl;
+
+  a {
+    font-weight: $bold-weight;
+  }
+}
+
+.padded-section {
+  padding-top: calc(#{$sp-lg} + 5vh);
+  padding-bottom: calc(#{$sp-lg} + 5vh);
+}
