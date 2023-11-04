@@ -6,7 +6,8 @@ import MulticolSection from "/components/layout/components/MulticolSection";
 import TextSection from "/components/layout/components/TextSection";
 
 const heroSection = {
-  title: "The Welcoming",
+  title: "Exploring the gray area between rock and metal",
+  subhead: "In Western NC and beyond",
 };
 
 const sections = [];
@@ -39,7 +40,13 @@ function generateLayout(section) {
 export default function Home() {
   return (
     <DefaultLayout slug="home" sections={sections}>
-      {heroSection && <HeroSection title={heroSection?.title} />}
+      {heroSection && (
+        <HeroSection
+          title={heroSection?.title}
+          subhead={heroSection?.subhead}
+          pageSlug="home"
+        />
+      )}
 
       {sections?.map((section) => generateLayout(section))}
     </DefaultLayout>

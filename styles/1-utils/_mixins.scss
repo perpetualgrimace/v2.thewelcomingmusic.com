@@ -51,23 +51,28 @@
 @mixin body-text {
   font-family: $body-font;
   font-weight: $body-weight;
+  letter-spacing: 0.025em;
 }
 
 @mixin title-text {
   font-family: $title-font;
-  font-size: calc(6vw + #{$font-size-sm});
-  line-height: 1;
-
-  @media (min-width: 700px) {
-    font-size: $font-size-xl;
-  }
+  font-size: $font-size-xl;
+  font-weight: $title-weight;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1.25;
+  text-shadow: 0 2px 2rem $black;
 }
 
 @mixin subhead-text {
   font-family: $subhead-font;
   font-weight: $subhead-weight;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 8px;
+  line-height: 1.5;
+  color: $off-white;
+  font-family: Lato-Semibold;
+  text-shadow: 0 2px 2rem $black;
 }
 
 @mixin heading-text {
@@ -77,22 +82,22 @@
 
 @mixin font-xl {
   font-size: $font-size-xl;
-  line-height: 1.5rem;
+  line-height: 1.25em;
 }
 
 @mixin font-lg {
   font-size: $font-size-lg;
-  line-height: 1.5rem;
+  line-height: 1.25em;
 }
 
 @mixin font-md {
   font-size: $font-size-md;
-  line-height: 1.25rem;
+  line-height: 1.25em;
 }
 
 @mixin font-sm {
   font-size: $font-size-sm;
-  line-height: 1rem;
+  line-height: 1em;
 }
 
 //////////////////////////////////

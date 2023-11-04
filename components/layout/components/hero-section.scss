@@ -1,26 +1,23 @@
 .hero-section {
-  &:before {
-    @include pseudo;
-    @include absolute-horizontal-center;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    background-image: url("/hero-bg.jpg");
-    background-size: cover;
-    background-position: 50% 90%;
-    mask-image: linear-gradient(to bottom, $black 75%, rgba($violet, 0));
+  overflow: hidden;
+}
+.home-hero-section {
+  min-height: calc(25rem + 10vh);
 
-    @media (min-resolution: 1.5dppx) and (min-width: 900px) {
-      background-image: url("/hero-bg@2x.jpg");
-    }
-
-    @supports (mask-image: none) {
-      background-position: 50% 50%;
-    }
+  @media (max-width: 665px) {
+    min-height: calc(100vh - #{$navbar-height});
   }
-
-  .hero-title {
-    width: 40rem;
-    max-width: 100%;
-  }
+}
+.hero-title {
+  width: 33.3rem;
+  max-width: 100%;
+}
+.hero-subhead {
+  display: block;
+  margin-top: $sp-md;
+}
+.hero-bg {
+  @include absolute-expand;
+  z-index: -1;
+  object-position: 0% 100%;
 }

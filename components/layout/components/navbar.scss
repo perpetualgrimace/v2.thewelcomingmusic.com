@@ -69,7 +69,7 @@
   align-items: center;
 }
 
-@media (max-width: 959px) {
+@media (max-width: 899px) {
   .navbar-menu {
     position: fixed;
     border-radius: 0;
@@ -152,7 +152,7 @@
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 900px) {
   .navbar-menu {
     width: auto;
     flex-direction: row;
