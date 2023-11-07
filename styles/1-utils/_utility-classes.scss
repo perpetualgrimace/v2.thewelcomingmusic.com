@@ -39,6 +39,9 @@
 .u-font-sm {
   @include font-sm;
 }
+.u-font-xs {
+  @include font-xs;
+}
 
 .u-text-c {
   text-align: center;

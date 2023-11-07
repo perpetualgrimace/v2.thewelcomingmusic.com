@@ -84,20 +84,21 @@
   font-size: $font-size-xl;
   line-height: 1.25em;
 }
-
 @mixin font-lg {
   font-size: $font-size-lg;
   line-height: 1.25em;
 }
-
 @mixin font-md {
   font-size: $font-size-md;
   line-height: 1.25em;
 }
-
 @mixin font-sm {
   font-size: $font-size-sm;
   line-height: 1em;
+}
+@mixin font-xs {
+  font-size: $font-size-xs;
+  line-height: 1.5em;
 }
 
 //////////////////////////////////
