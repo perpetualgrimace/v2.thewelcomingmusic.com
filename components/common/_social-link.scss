@@ -3,6 +3,7 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
 .social-link {
   @include font-md;
   text-decoration: none;
+  border-radius: 2em;
   padding: 0.1em 1em 0.1em 0.1em;
   margin-left: -0.5em;
   transition: color 0.2s ease-out, background-color 0.2s ease-out;
@@ -38,7 +39,11 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
     color: $off-white;
     background-color: $social-dark-bg-color;
     backdrop-filter: blur(3px);
-    border-radius: 2em;
+  }
+
+  &.light-theme {
+    color: $violet;
+    background-color: $off-white;
   }
 
   &:hover,
