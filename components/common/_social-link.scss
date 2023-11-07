@@ -1,0 +1,71 @@
+$social-dark-bg-color: rgba(16, 9, 42, 0.66);
+
+.social-link {
+  @include font-md;
+  text-decoration: none;
+  padding: 0.1em 1em 0.1em 0.1em;
+  margin-left: -0.5em;
+  transition: color 0.2s ease-out, background-color 0.2s ease-out;
+
+  &.icon-only {
+    display: block;
+    padding: 0;
+    width: 2em;
+    height: 2em;
+  }
+
+  &:not(.icon-only) {
+    display: inline-block;
+    margin-bottom: $sp-xs;
+
+    @media (max-width: 665px) {
+      display: block;
+      @include font-lg;
+    }
+  }
+
+  svg {
+    width: 2em;
+    height: 2em;
+    transition: transform 0.1s ease-out;
+
+    path {
+      fill: currentColor;
+    }
+  }
+
+  &.dark-theme {
+    color: $off-white;
+    background-color: $social-dark-bg-color;
+    backdrop-filter: blur(3px);
+    border-radius: 2em;
+  }
+
+  &:hover,
+  &:focus {
+    color: $white;
+
+    svg {
+      transform: scale(1.125);
+    }
+
+    &[href*="spotify"] {
+      background-color: #1db954;
+    }
+    &[href*="bandcamp"] {
+      background-color: #408294;
+    }
+    &[href*="twitter"] {
+      background-color: #1d9bf0;
+    }
+    &[href*="instagram"] {
+      background-color: #e4405f;
+    }
+    &[href*="youtube"] {
+      background-color: #ff0000;
+    }
+    &[href*="facebook"] {
+      background-color: #0866ff;
+    }
+  }
+}
