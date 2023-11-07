@@ -24,6 +24,7 @@ export default function HeroSection(props) {
             /hero/${pageSlug}-hero-vertical-400w.jpg 400w,
             /hero/${pageSlug}-hero-vertical-800w.jpg 800w
           `}
+          draggable="false"
         />
         <source
           media="(min-width:666px)"
@@ -31,8 +32,13 @@ export default function HeroSection(props) {
             /hero/${pageSlug}-hero-1200w.jpg 1200w,
             /hero/${pageSlug}-hero-2400w.jpg 2400w
           `}
+          draggable="false"
         />
-        <img src="/hero/${pageSlug}-hero-1200w.jpg" alt="" />
+        <img
+          src="/hero/${pageSlug}-hero-1200w.jpg"
+          alt=""
+          draggable="false"
+        />
       </picture>
     </section>
   );

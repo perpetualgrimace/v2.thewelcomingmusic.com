@@ -1,16 +1,11 @@
 .hero-section {
   overflow: hidden;
 }
-.home-hero-section {
-  min-height: calc(25rem + 10vh);
 
-  @media (max-width: 665px) {
-    min-height: calc(100vh - #{$navbar-height});
-  }
-}
 .hero-title {
   width: 33.3rem;
   max-width: 100%;
+  padding-bottom: $sp-xxl;
 }
 .hero-subhead {
   display: block;
@@ -19,5 +14,32 @@
 .hero-bg {
   @include absolute-expand;
   z-index: -1;
-  object-position: 0% 100%;
+  pointer-events: none;
+
+  & > * {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.home-hero-section {
+  min-height: calc(25rem + 10vh);
+
+  .hero-bg > * {
+    object-position: 85% 66.6%;
+  }
+
+  @media (max-width: 665px) {
+    min-height: calc(100vh - #{$navbar-height});
+    display: flex;
+    flex-direction: column;
+
+    .hero-title {
+      margin-bottom: auto;
+    }
+
+    .hero-bg > * {
+      object-position: 66.6% 66.6%;
+    }
+  }
 }
