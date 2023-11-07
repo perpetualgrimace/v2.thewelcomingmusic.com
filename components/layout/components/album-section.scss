@@ -1,0 +1,23 @@
+.album-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.album-section-bg {
+  @include absolute-expand;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.album-section-img {
+  margin-right: $sp-xxl;
+  max-width: 40%;
+  box-shadow: 0 4px 18px 0 rgba($black, 0.28),
+    0 2px 47px 0 rgba($black, 0.31);
+}
+
+// TODO: mobile layout

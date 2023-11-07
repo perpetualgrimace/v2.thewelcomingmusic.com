@@ -13,6 +13,7 @@ import HeroSection from "/components/layout/components/HeroSection";
 import MulticolSection from "/components/layout/components/MulticolSection";
 import TextSection from "/components/layout/components/TextSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
+import AlbumSection from "/components/layout/components/AlbumSection";
 
 const heroSection = {
   title: "Exploring the gray area between rock and metal",
@@ -71,6 +72,24 @@ export default function Home() {
       />
 
       <ShowsSection />
+
+      <AlbumSection
+        title="Neptune EP"
+        subhead="Out now"
+        spotifyLink="https://open.spotify.com/album/69cdXkVgVecRR3vPLzuNVt?si=ohEnXlc0S8eFtdeKWuKblA"
+        bandcampLink="https://thewelcoming.bandcamp.com/album/neptune-ep"
+        imgSrc="neptune"
+        bgImgSrc="neptune-blue"
+      />
+
+      <AlbumSection
+        title="Decayed | Remade"
+        subhead="The debut album"
+        spotifyLink="https://open.spotify.com/album/3gJgrfKZd0SlY1FpOQrP0K?si=yVPBBHvZTYSFbK1cDSdJkw"
+        bandcampLink="https://thewelcoming.bandcamp.com/album/decayed-remade"
+        imgSrc="decayed-remade"
+        bgImgSrc="decayed-remade"
+      />
     </DefaultLayout>
   );
 }
