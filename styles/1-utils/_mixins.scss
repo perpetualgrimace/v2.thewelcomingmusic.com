@@ -77,6 +77,8 @@
 
 @mixin heading-text {
   font-weight: $bold-weight;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
   margin-bottom: $sp-md;
 }
 

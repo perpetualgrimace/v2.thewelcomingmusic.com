@@ -1,9 +1,18 @@
 html {
   background-color: $black;
-  color: $peach;
+  color: $off-white;
 }
 
-a,
+a {
+  color: $peach;
+  transition: color 0.2s ease-out;
+
+  &:hover,
+  &:focus {
+    color: $aero-light;
+  }
+}
+
 button,
 h1,
 h2,
@@ -32,7 +41,7 @@ a {
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
-  outline: 3px dotted rgba($grape, 0.5);
+  outline: 3px dotted rgba($aero, 0.5);
   outline-offset: 3px;
 }
 a:focus:not(:focus-visible),
@@ -43,5 +52,5 @@ button:focus:not(:focus-visible),
 
 ::selection {
   color: $white;
-  background-color: rgba($grape, 0.6);
+  background-color: rgba($peach, 0.6);
 }

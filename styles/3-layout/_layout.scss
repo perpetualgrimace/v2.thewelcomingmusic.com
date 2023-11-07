@@ -1,5 +1,7 @@
 .main {
   overflow-x: hidden;
+  width: calc(100% - 12px);
+  margin-left: 6px;
 }
 
 .wrapper > :first-child {

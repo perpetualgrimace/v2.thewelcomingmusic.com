@@ -12,6 +12,7 @@ import SocialLink from "/components/common/SocialLink";
 import HeroSection from "/components/layout/components/HeroSection";
 import MulticolSection from "/components/layout/components/MulticolSection";
 import TextSection from "/components/layout/components/TextSection";
+import ShowsSection from "/components/layout/components/ShowsSection";
 
 const heroSection = {
   title: "Exploring the gray area between rock and metal",
@@ -59,46 +60,17 @@ const heroSection = {
   ),
 };
 
-const sections = [];
-
-function generateLayout(section) {
-  if (section?.layout === "multicol") {
-    return (
-      <MulticolSection
-        key={section?.title}
-        title={section?.title}
-        slug={section?.slug}
-        columns={section?.columns}
-      />
-    );
-  }
-  // text section assumed
-  else {
-    return (
-      <TextSection
-        key={section?.title}
-        title={section?.title}
-        slug={section?.slug}
-      >
-        {section?.text}
-      </TextSection>
-    );
-  }
-}
-
 export default function Home() {
   return (
-    <DefaultLayout slug="home" sections={sections}>
-      {heroSection && (
-        <HeroSection
-          title={heroSection?.title}
-          subhead={heroSection?.subhead}
-          pageSlug="home"
-          children={heroSection?.children}
-        />
-      )}
+    <DefaultLayout slug="home">
+      <HeroSection
+        title={heroSection?.title}
+        subhead={heroSection?.subhead}
+        pageSlug="home"
+        children={heroSection?.children}
+      />
 
-      {sections?.map((section) => generateLayout(section))}
+      <ShowsSection />
     </DefaultLayout>
   );
 }

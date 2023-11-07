@@ -1,0 +1,20 @@
+[
+  {
+    "date": "November 16",
+    "venue": "The Odd",
+    "city": "Asheville, NC",
+    "link": "https://www.songkick.com/concerts/41387471-challenger-deep-at-odd"
+  },
+  {
+    "date": "November 17",
+    "venue": "Lily’s Snack Bar",
+    "city": "Boone, NC",
+    "link": "https://www.songkick.com/concerts/41406956-challenger-deep-at-lilys-snack-bar"
+  },
+  {
+    "date": "November 18",
+    "venue": "Monstercade",
+    "city": "Winston Salem, NC",
+    "link": "https://www.songkick.com/concerts/41406962-challenger-deep-at-monstercade"
+  }
+]
