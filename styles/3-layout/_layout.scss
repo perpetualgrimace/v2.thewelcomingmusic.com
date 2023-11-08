@@ -8,6 +8,10 @@
   z-index: 1;
 }
 
+.wrapper > section {
+  margin-bottom: 4px;
+}
+
 .padded-section {
   padding: $sp-lg;
 
