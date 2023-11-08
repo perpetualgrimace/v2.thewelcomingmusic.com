@@ -14,6 +14,7 @@ import MulticolSection from "/components/layout/components/MulticolSection";
 import TextSection from "/components/layout/components/TextSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
 import AlbumSection from "/components/layout/components/AlbumSection";
+import VideoSection from "/components/layout/components/VideoSection";
 
 const heroSection = {
   title: "Exploring the gray area between rock and metal",
@@ -80,6 +81,13 @@ export default function Home() {
         bandcampLink="https://thewelcoming.bandcamp.com/album/neptune-ep"
         imgSrc="neptune"
         bgImgSrc="neptune-blue"
+      />
+
+      <VideoSection
+        title="The Making of Neptune"
+        subhead="Docuseries"
+        videoUrl="https://www.youtube.com/embed/kp-Ybvr60W4?si=A6gfbWqHkW3m_5Fn"
+        bgImgSrc="neptune-purple"
       />
 
       <AlbumSection
