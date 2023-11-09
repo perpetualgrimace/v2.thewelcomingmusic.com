@@ -1,0 +1,29 @@
+.quote-tile {
+  display: block;
+  break-inside: avoid;
+  padding: $sp-md $sp-lg $sp-lg $sp-lg;
+  margin-bottom: 4px;
+  background-image: linear-gradient(to bottom, $grape 0%, $violet 100%);
+  box-shadow: 0 2px 47px 0 rgba($black, 0.31);
+}
+
+.quote-text {
+  color: $white;
+  line-height: 1.5;
+
+  &:before {
+    content: "“";
+    position: absolute;
+    left: -0.375em;
+    color: $off-white;
+  }
+  &:after {
+    content: "”";
+    color: $off-white;
+  }
+}
+
+.quote-author {
+  text-align: right;
+  color: $peach;
+}

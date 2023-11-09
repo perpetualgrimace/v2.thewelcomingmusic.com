@@ -1,0 +1,18 @@
+.quotes-section {
+  padding-top: $sp-lg;
+  margin-bottom: -4rem !important;
+  z-index: 1;
+
+  & + [class*="section"] {
+    padding-top: $sp-xxl * 2;
+  }
+}
+
+.quotes-list {
+  column-gap: 4px;
+  column-width: 19.25rem;
+
+  @media (max-width: 665px) {
+    columns: 2;
+  }
+}

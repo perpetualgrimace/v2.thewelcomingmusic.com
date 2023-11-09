@@ -12,6 +12,7 @@
 .album-section-bg {
   @include absolute-expand;
   object-fit: cover;
+  object-position: bottom;
   z-index: -1;
 }
 

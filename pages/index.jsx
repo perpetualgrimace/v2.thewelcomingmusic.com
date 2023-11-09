@@ -1,3 +1,5 @@
+import Quotes from "/data/quotes.json";
+
 import DefaultLayout from "/components/layout/DefaultLayout";
 
 import SpotifyIcon from "/components/icons/social/SpotifyIcon.svg";
@@ -14,6 +16,7 @@ import MulticolSection from "/components/layout/components/MulticolSection";
 import TextSection from "/components/layout/components/TextSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
 import AlbumSection from "/components/layout/components/AlbumSection";
+import QuotesSection from "/components/layout/components/QuotesSection";
 import VideoSection from "/components/layout/components/VideoSection";
 
 const heroSection = {
@@ -83,6 +86,11 @@ export default function Home() {
         bgImgSrc="neptune-blue"
       />
 
+      <QuotesSection
+        title="Neptune appreciation"
+        quotes={Quotes.neptune}
+      />
+
       <VideoSection
         title="The Making of Neptune"
         subhead="Docuseries"
@@ -97,6 +105,11 @@ export default function Home() {
         bandcampLink="https://thewelcoming.bandcamp.com/album/decayed-remade"
         imgSrc="decayed-remade"
         bgImgSrc="decayed-remade"
+      />
+
+      <QuotesSection
+        title="Decayed | Remade appreciation"
+        quotes={Quotes["decayed-remade"]}
       />
     </DefaultLayout>
   );
