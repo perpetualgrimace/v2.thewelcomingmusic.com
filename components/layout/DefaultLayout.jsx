@@ -1,5 +1,6 @@
 import Meta from "./components/Meta";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function DefaultLayout(props) {
   const { title, slug, children } = props;
@@ -18,6 +19,8 @@ export default function DefaultLayout(props) {
           {children}
         </div>
       </main>
+
+      <Footer />
     </div>
   );
 }

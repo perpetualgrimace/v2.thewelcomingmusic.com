@@ -4,13 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import checkRoute from "/helpers/checkRoute";
-import checkOutboundLink from "/helpers/checkOutboundLink";
 
 import CrossIcon from "/components/icons/CrossIcon";
 import HamburgerIcon from "/components/icons/HamburgerIcon";
 import RetinaImg from "/components/common/RetinaImg";
 
-const menuItems = [
+export const menuItems = [
   {
     label: "Home",
     route: "/",
@@ -127,12 +126,6 @@ export default function Navbar() {
                 }`}
                 aria-current={checkRoute(link?.route, currRoute)}
                 tabIndex={menuIsOpen ? 0 : -1}
-                target={checkOutboundLink(link?.route) ? "_blank" : null}
-                rel={
-                  checkOutboundLink(link?.route)
-                    ? "noopener noreferrer"
-                    : null
-                }
                 onClick={() =>
                   link?.route === currRoute && setMenuIsOpen(false)
                 }

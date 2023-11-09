@@ -1,7 +1,10 @@
 .quotes-section {
   padding-top: $sp-lg;
-  margin-bottom: -4rem !important;
   z-index: 1;
+
+  &:not(:last-child) {
+    margin-bottom: -4rem !important;
+  }
 
   & + [class*="section"] {
     padding-top: $sp-xxl * 2;
