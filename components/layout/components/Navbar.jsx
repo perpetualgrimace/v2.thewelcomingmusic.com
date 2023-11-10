@@ -7,8 +7,8 @@ import MenuItems from "/data/siteNav.json";
 
 import checkRoute from "/helpers/checkRoute";
 
-import CrossIcon from "/components/icons/CrossIcon";
-import HamburgerIcon from "/components/icons/HamburgerIcon";
+import CrossIcon from "/components/icons/CrossIcon.svg";
+import HamburgerIcon from "/components/icons/HamburgerIcon.svg";
 import RetinaImg from "/components/common/RetinaImg";
 
 export default function Navbar() {

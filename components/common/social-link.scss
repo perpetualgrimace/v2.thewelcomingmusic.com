@@ -49,6 +49,7 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
   &:hover,
   &:focus {
     color: $white;
+    background-color: $grape;
 
     svg {
       transform: scale(1.125);
