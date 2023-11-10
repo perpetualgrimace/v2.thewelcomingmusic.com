@@ -2,15 +2,13 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 import SocialLinks from "/data/socialLinks.json";
+import MenuItems from "/data/siteNav.json";
 
 import checkRoute from "/helpers/checkRoute";
 import getCurrentYear from "/helpers/getCurrentYear";
-import loadIcon from "/helpers/loadIcon";
 
 import RetinaImg from "/components/common/RetinaImg";
-import SocialLink from "/components/common/SocialLink";
-
-import { menuItems } from "/components/layout/components/Navbar";
+import SocialLinkList from "/components/common/SocialLinkList";
 
 export default function footerSection(props) {
   const currRoute = useRouter().pathname;
@@ -36,18 +34,13 @@ export default function footerSection(props) {
 
         <div className="footer-socials u-mb-xl">
           <h2 className="footer-heading">All the links</h2>
-          <ul className="footer-social-list">
-            {SocialLinks.map((link) => (
-              <SocialLink
-                href={link.href}
-                Icon={loadIcon(link.icon)}
-                hideText={true}
-                theme="light"
-              >
-                {link.label}
-              </SocialLink>
-            ))}
-          </ul>
+
+          <SocialLinkList
+            wrapperClass="footer-social-list"
+            links={SocialLinks}
+            theme="light"
+            hideText={true}
+          />
         </div>
 
         <RetinaImg
@@ -58,7 +51,7 @@ export default function footerSection(props) {
 
       <nav className="footer-nav u-mb-lg">
         <ul className="footer-menu">
-          {menuItems.map((link) => (
+          {MenuItems.map((link) => (
             <li key={link?.label} className="footer-menu-item">
               <Link
                 href={link?.route}

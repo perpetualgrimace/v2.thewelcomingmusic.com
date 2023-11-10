@@ -3,26 +3,13 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import MenuItems from "/data/siteNav.json";
+
 import checkRoute from "/helpers/checkRoute";
 
 import CrossIcon from "/components/icons/CrossIcon";
 import HamburgerIcon from "/components/icons/HamburgerIcon";
 import RetinaImg from "/components/common/RetinaImg";
-
-export const menuItems = [
-  {
-    label: "Home",
-    route: "/",
-  },
-  {
-    label: "About",
-    route: "/about",
-  },
-  {
-    label: "Press kit",
-    route: "/epk",
-  },
-];
 
 export default function Navbar() {
   const currRoute = useRouter().pathname;
@@ -50,7 +37,7 @@ export default function Navbar() {
     if (menuIsOpen) {
       const nodes = menuContainerRef.current.childNodes;
 
-      if (highlightedIndex >= 0 && highlightedIndex < menuItems.length) {
+      if (highlightedIndex >= 0 && highlightedIndex < MenuItems.length) {
         nodes[highlightedIndex].focus();
       }
     } else if (menuHasBeenOpened) {
@@ -115,7 +102,7 @@ export default function Navbar() {
             </button>
           </li>
 
-          {menuItems.map((link, i) => (
+          {MenuItems.map((link, i) => (
             <li key={link?.label} className="navbar-menu-item">
               <Link
                 href={link?.route}
