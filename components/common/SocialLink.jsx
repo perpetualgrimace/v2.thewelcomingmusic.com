@@ -6,6 +6,7 @@ export default function SocialLink(props) {
     theme = "dark",
     hideText = false,
   } = props;
+
   return (
     <li className="social-item">
       <a

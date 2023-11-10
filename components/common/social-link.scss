@@ -6,6 +6,7 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
   border-radius: 2em;
   padding: 0.1em 1em 0.1em 0.1em;
   margin-left: -0.5em;
+  min-height: 2em;
   transition: color 0.2s ease-out, background-color 0.2s ease-out;
 
   &.icon-only {
@@ -17,7 +18,14 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
 
   &:not(.icon-only) {
     display: inline-block;
+    line-height: 2em;
+    padding-left: 2.125em;
     margin-bottom: $sp-xs;
+
+    svg {
+      position: absolute;
+      left: 0.125em;
+    }
 
     @media (max-width: 665px) {
       display: block;
@@ -55,23 +63,41 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
       transform: scale(1.125);
     }
 
-    &[href*="spotify"] {
-      background-color: #1db954;
+    &[href*="music.amazon.com"] {
+      background-color: #44b5e7;
     }
-    &[href*="bandcamp"] {
+    &[href*="music.apple.com"] {
+      background-color: #fa243c;
+    }
+    &[href*="bandcamp.com"] {
       background-color: #408294;
     }
-    &[href*="twitter"] {
-      background-color: #1d9bf0;
+    &[href*="deezer"] {
+      background-color: #feaa2d;
     }
-    &[href*="instagram"] {
+    &[href*="facebook.com"] {
+      background-color: #0866ff;
+    }
+    &[href*="iheart.com"] {
+      background-color: #c6002b;
+    }
+    &[href*="instagram.com"] {
       background-color: #e4405f;
     }
-    &[href*="youtube"] {
-      background-color: #ff0000;
+    &[href*="pandora.com"] {
+      background-color: #224099;
     }
-    &[href*="facebook"] {
-      background-color: #0866ff;
+    &[href*="spotify.com"] {
+      background-color: #1db954;
+    }
+    &[href*="tidal.com"] {
+      background-color: #000;
+    }
+    &[href*="twitter.com"] {
+      background-color: #1d9bf0;
+    }
+    &[href*="youtube.com"] {
+      background-color: #ff0000;
     }
   }
 }
