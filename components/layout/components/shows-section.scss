@@ -1,6 +1,6 @@
 .shows-section {
+  @include section-gradient;
   padding-top: $sp-xl;
-  background-image: radial-gradient(50% 100%, #10092a 18%, $black 100%);
 }
 
 .shows-list {

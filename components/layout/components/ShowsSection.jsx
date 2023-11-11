@@ -2,6 +2,12 @@ import Upcoming from "/data/shows.json";
 
 import ShowTile from "/components/layout/components/ShowTile";
 
+export const songkickLink =
+  "https://www.songkick.com/artists/10227128-welcoming";
+export const bandsintownLink = "https://www.bandsintown.com/a/15509125";
+export const facebookEventsLink =
+  "https://www.facebook.com/thewelcomingmusic/events";
+
 export default function ShowsSection() {
   if (!Upcoming) return null;
 
@@ -10,10 +16,7 @@ export default function ShowsSection() {
       <h2 className="u-title u-mb-xxs">Upcoming events</h2>
       <p className="u-mb-lg">
         Powered by{" "}
-        <a
-          href="https://www.songkick.com/artists/10227128-welcoming"
-          target="_blank"
-        >
+        <a href={songkickLink} target="_blank">
           Songkick
         </a>
       </p>

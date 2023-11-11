@@ -2,7 +2,6 @@ import { useCallback, useRef, useState } from "react";
 
 import CrossIcon from "/components/icons/CrossIcon.svg";
 import MoreIcon from "/components/icons/MoreIcon.svg";
-import SocialLink from "/components/common/SocialLink";
 
 export default function SocialPopup(props) {
   const { theme, children } = props;

@@ -111,10 +111,6 @@
   box-shadow: 0 1px 12px $shadow;
 }
 
-@mixin hue-shift {
-  filter: hue-rotate(30deg); // update hue to match new theme
-}
-
 @mixin fancy-outline($offset: 1px, $color: $grape, $radius: $radius-lg) {
   @include pseudo;
   position: absolute;
@@ -130,4 +126,12 @@
   opacity: 0;
   transition: all 0.2s ease-out;
   transition-property: opacity, box-shadow, border-color;
+}
+
+@mixin section-gradient {
+  background-image: radial-gradient(
+    ellipse at top,
+    #10092a 18%,
+    $black 100%
+  );
 }
