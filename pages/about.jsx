@@ -9,13 +9,13 @@ import DefaultLayout from "/components/layout/DefaultLayout";
 
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
+import MusiciansSection from "/components/layout/components/MusiciansSection";
 import QuotesSection from "/components/layout/components/QuotesSection";
 
 export default function About() {
   return (
     <DefaultLayout slug="about">
       <HeroSection title="About The Welcoming" pageSlug="about" />
-
       <ImgTextSection
         title="Don’t call us a p**g band"
         imgSrc="thumbnail/about-1"
@@ -28,6 +28,8 @@ export default function About() {
           Circle, and Coheed & Cambria.
         </p>
       </ImgTextSection>
+
+      <MusiciansSection />
 
       <ImgTextSection
         title="How it started | How it's going"
