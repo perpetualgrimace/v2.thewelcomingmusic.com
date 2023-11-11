@@ -1,3 +1,5 @@
+import RetinaImg from "/components/common/RetinaImg";
+
 export default function HeroSection(props) {
   const { slug, pageSlug, title, subhead, children } = props;
   return (
@@ -17,29 +19,37 @@ export default function HeroSection(props) {
 
       {children}
 
-      <picture className="hero-bg">
-        <source
-          media="(max-width:665px)"
-          srcSet={`
+      {pageSlug === "home" ? (
+        <picture className="hero-bg">
+          <source
+            media="(max-width:665px)"
+            srcSet={`
             /hero/${pageSlug}-hero-vertical-400w.jpg 400w,
             /hero/${pageSlug}-hero-vertical-800w.jpg 800w
           `}
-          draggable="false"
-        />
-        <source
-          media="(min-width:666px)"
-          srcSet={`
+            draggable="false"
+          />
+          <source
+            media="(min-width:666px)"
+            srcSet={`
             /hero/${pageSlug}-hero-1200w.jpg 1200w,
             /hero/${pageSlug}-hero-2400w.jpg 2400w
           `}
-          draggable="false"
+            draggable="false"
+          />
+          <img
+            src="/hero/${pageSlug}-hero-1200w.jpg"
+            alt=""
+            draggable="false"
+          />
+        </picture>
+      ) : (
+        <RetinaImg
+          className="hero-bg"
+          file={`hero/${pageSlug}-hero`}
+          extension="jpg"
         />
-        <img
-          src="/hero/${pageSlug}-hero-1200w.jpg"
-          alt=""
-          draggable="false"
-        />
-      </picture>
+      )}
     </section>
   );
 }

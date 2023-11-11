@@ -1,7 +1,7 @@
 import QuoteTile from "/components/layout/components/QuoteTile";
 
 export default function QuotesSection(props) {
-  const { title, quotes } = props;
+  const { title = "People are saying", quotes } = props;
 
   return (
     <section className="quotes-section">
