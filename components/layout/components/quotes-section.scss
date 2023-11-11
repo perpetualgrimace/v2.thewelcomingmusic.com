@@ -13,9 +13,9 @@
 
 .quotes-list {
   column-gap: 4px;
-  column-width: 19.25rem;
+  columns: 2;
 
-  @media (max-width: 665px) {
-    columns: 2;
+  @media (min-width: 666px) {
+    columns: 3;
   }
 }

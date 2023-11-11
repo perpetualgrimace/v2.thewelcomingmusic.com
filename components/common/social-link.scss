@@ -30,6 +30,7 @@ $social-dark-bg-color: rgba(16, 9, 42, 0.66);
     @media (max-width: 665px) {
       display: block;
       @include font-lg;
+      line-height: 2em;
     }
   }
 
