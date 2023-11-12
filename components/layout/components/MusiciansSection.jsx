@@ -14,6 +14,7 @@ export default function MusiciansSection() {
             role={musician.role}
             instagram={musician.instagram}
             imgSrc={musician.imgSrc}
+            key={musician.name}
           />
         ))}
       </ul>

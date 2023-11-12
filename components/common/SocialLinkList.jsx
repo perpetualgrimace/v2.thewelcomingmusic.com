@@ -15,7 +15,7 @@ export default function SocialLinkList(props) {
     >
       {links.map((link) =>
         Array.isArray(link) && link.length ? (
-          <SocialPopup theme={theme}>
+          <SocialPopup theme={theme} key="popup">
             {link.map((nestedLink) =>
               generateSocialLink(nestedLink, theme, hideText)
             )}
@@ -35,6 +35,7 @@ function generateSocialLink(link, theme, hideText) {
       Icon={loadIcon(link.icon)}
       theme={theme}
       hideText={hideText}
+      key={link.href}
     >
       {link.label}
       {link?.smallText && (

@@ -31,9 +31,9 @@ export default function VideoSection(props) {
           height="315"
           src={videoUrl}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         />
       </div>
 

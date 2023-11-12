@@ -5,23 +5,12 @@ export default function Meta(props) {
   return (
     <Head>
       <meta charSet="utf-8" />
-      <title>The Welcoming{pageTitle && ` | ${pageTitle}`}</title>
+      <title>{generateTitle(pageTitle)}</title>
       {description && <meta name="description" content={description} />}
 
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1"
-      />
-
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossOrigin
-      />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap"
-        rel="stylesheet"
       />
 
       <link rel="icon" href="/favicon.ico" sizes="any" />
@@ -33,4 +22,10 @@ export default function Meta(props) {
       {children}
     </Head>
   );
+}
+
+function generateTitle(pageTitle) {
+  let title = "The Welcoming";
+  if (pageTitle) title += ` | ${pageTitle}`;
+  return title;
 }

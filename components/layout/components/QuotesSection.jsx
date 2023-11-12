@@ -13,6 +13,7 @@ export default function QuotesSection(props) {
             quote={quote.quote}
             author={quote.author}
             fontSize={quote.fontSize}
+            key={quote.author}
           />
         ))}
       </ul>

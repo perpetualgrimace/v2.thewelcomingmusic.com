@@ -9,7 +9,7 @@ import StatsSection from "/components/layout/components/StatsSection";
 
 export default function EPK() {
   return (
-    <DefaultLayout slug="epk">
+    <DefaultLayout slug="epk" title="Press kit">
       <HeroSection title="Press Kit" pageSlug="epk" />
 
       <ImgTextSection title="You won’t be bored" imgSrc="thumbnail/epk-1">

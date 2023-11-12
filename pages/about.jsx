@@ -14,7 +14,7 @@ import QuotesSection from "/components/layout/components/QuotesSection";
 
 export default function About() {
   return (
-    <DefaultLayout slug="about">
+    <DefaultLayout slug="about" title="About">
       <HeroSection title="About The Welcoming" pageSlug="about" />
       <ImgTextSection
         title="Don’t call us a p**g band"

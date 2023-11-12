@@ -17,7 +17,10 @@ export default function QuoteTile(props) {
 
 function makeBlockQuote(quote, fontSize) {
   return (
-    <blockquote className={`quote-text u-font-${fontSize} u-mb-sm`}>
+    <blockquote
+      className={`quote-text u-font-${fontSize} u-mb-sm`}
+      key={quote}
+    >
       {quote}
     </blockquote>
   );

@@ -29,6 +29,7 @@ export default function ShowsSection() {
             city={show.city}
             href={show.link}
             index={i}
+            key={show.date}
           />
         ))}
       </ul>
