@@ -2,6 +2,7 @@ import Stats from "/data/stats.json";
 
 import loadIcon from "/helpers/loadIcon";
 
+import Stat from "/components/layout/components/Stat";
 import StatTile from "/components/layout/components/StatTile";
 
 const { neptune, decayedRemade, followers } = Stats;
@@ -37,24 +38,33 @@ export default function StatsSection() {
         {makeAlbumTile(decayedRemade)}
       </StatTile>
 
-      <StatTile
-        title="Media statistics"
-        imgSrc="thumbnail/epk-2"
-        imgClass="stat-tile-img"
-      >
+      <StatTile imgSrc="thumbnail/epk-2" imgClass="stat-tile-img">
+        <h3 className="stat-tile-title u-title">Media statistics</h3>
         <ul className="stat-list">
-          <li className="stat">
-            {loadIcon("Spotify")} {spotifyListeners} monthly listeners
-          </li>
-          <li className="stat">
-            {loadIcon("Twitter")} {twitterFollowers} followers
-          </li>
-          <li className="stat">
-            {loadIcon("Facebook")} {facebookFollowers} followers
-          </li>
-          <li className="stat">
-            {loadIcon("Instagram")} {instagramFollowers} followers
-          </li>
+          <Stat
+            Icon="Spotify"
+            value={spotifyListeners}
+            label="monthly listeners"
+            clarificationText="on Spotify"
+          />
+          <Stat
+            Icon="Twitter"
+            value={twitterFollowers}
+            label="followers"
+            clarificationText="on Twitter"
+          />
+          <Stat
+            Icon="Facebook"
+            value={facebookFollowers}
+            label="followers"
+            clarificationText="on Facebook"
+          />
+          <Stat
+            Icon="Instagram"
+            value={instagramFollowers}
+            label="followers"
+            clarificationText="on Instagram"
+          />
         </ul>
       </StatTile>
     </section>
@@ -73,17 +83,25 @@ function makeAlbumTile(statObj) {
   const { spotifyPlays, bandcampSales, topTrack } = statObj;
   return (
     <ul className="stat-list">
-      <li className="stat">
-        {loadIcon("Spotify")} {spotifyPlays} plays
-      </li>
-      <li className="stat">
-        {loadIcon("Bandcamp")} {bandcampSales} sales
-      </li>
-      <li className="stat">
-        Top track <br />
-        {topTrack.title}
-        {topTrack.spotifyPlays} plays
-      </li>
+      <Stat
+        Icon="Spotify"
+        value={spotifyPlays}
+        label="plays"
+        clarificationText="on Spotify"
+      />
+      <Stat
+        Icon="Bandcamp"
+        value={bandcampSales}
+        label="sales"
+        clarificationText="on Bandcamp"
+      />
+      <Stat
+        heading="Top track"
+        preValue={topTrack.title}
+        value={topTrack.spotifyPlays}
+        label="plays"
+        clarificationText="on Spotify"
+      />
     </ul>
   );
 }

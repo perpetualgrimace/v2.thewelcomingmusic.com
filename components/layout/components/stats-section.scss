@@ -1,4 +1,8 @@
 .stats-section {
   padding-top: $sp-lg;
+  display: flex;
+  flex-wrap: wrap;
   z-index: 1;
+  margin-left: -2px;
+  margin-right: -2px;
 }

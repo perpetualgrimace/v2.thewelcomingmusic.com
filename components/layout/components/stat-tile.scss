@@ -1,8 +1,18 @@
 .stat-tile {
   @include tile-gradient;
+  flex: 1 0 auto;
   display: block;
-  break-inside: avoid;
-  padding: $sp-md $sp-lg $sp-lg $sp-lg;
-  margin-bottom: 4px;
+  padding: $sp-xl;
+  margin: 2px;
   box-shadow: 0 2px 47px 0 rgba($black, 0.31);
+}
+
+.stat-tile-img {
+  width: 36.363636%;
+  float: left;
+  margin-right: $sp-xl;
+
+  &:not(.stat-tile-album-img) {
+    margin-top: $sp-xxs;
+  }
 }
