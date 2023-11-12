@@ -5,6 +5,7 @@ import DefaultLayout from "/components/layout/DefaultLayout";
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
 import QuotesSection from "/components/layout/components/QuotesSection";
+import StatsSection from "/components/layout/components/StatsSection";
 
 export default function EPK() {
   return (
@@ -26,6 +27,8 @@ export default function EPK() {
           been played on the air in multiple countries.
         </p>
       </ImgTextSection>
+
+      <StatsSection />
 
       <QuotesSection quotes={Quotes.epk} />
     </DefaultLayout>

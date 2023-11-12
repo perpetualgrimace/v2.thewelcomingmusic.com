@@ -135,3 +135,6 @@
     $black 100%
   );
 }
+@mixin tile-gradient() {
+  background-image: linear-gradient(to bottom, $grape 0%, $violet 100%);
+}

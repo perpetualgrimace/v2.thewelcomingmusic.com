@@ -1,0 +1,8 @@
+.stat-tile {
+  @include tile-gradient;
+  display: block;
+  break-inside: avoid;
+  padding: $sp-md $sp-lg $sp-lg $sp-lg;
+  margin-bottom: 4px;
+  box-shadow: 0 2px 47px 0 rgba($black, 0.31);
+}
