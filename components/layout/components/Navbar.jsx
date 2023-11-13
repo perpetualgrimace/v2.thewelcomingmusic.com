@@ -112,7 +112,6 @@ export default function Navbar() {
                     : ""
                 }`}
                 aria-current={checkRoute(link?.route, currRoute)}
-                tabIndex={menuIsOpen ? 0 : -1}
                 onClick={() =>
                   link?.route === currRoute && setMenuIsOpen(false)
                 }
@@ -127,6 +126,7 @@ export default function Navbar() {
               style={{ border: "none", width: "100%", height: "42px" }}
               src="https://bandcamp.com/EmbeddedPlayer/album=120878359/size=small/bgcol=18113c/linkcol=dfacaf/transparent=true/artwork=none"
               seamless
+              tabIndex="-1"
             />
           </li>
         </ul>

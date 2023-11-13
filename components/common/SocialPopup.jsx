@@ -4,7 +4,7 @@ import CrossIcon from "/components/icons/CrossIcon.svg";
 import MoreIcon from "/components/icons/MoreIcon.svg";
 
 export default function SocialPopup(props) {
-  const { theme, children } = props;
+  const { children } = props;
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const popupOpenButtonRef = useRef(null);
@@ -44,22 +44,25 @@ export default function SocialPopup(props) {
           className="social-popup-close-button"
           onClick={closePopup}
           ref={popupCloseButtonRef}
+          tabIndex={isPopupVisible ? "0" : "-1"}
         >
           <CrossIcon />
           <span className="u-visually-hidden">close menu</span>
         </button>
 
-        <ul className="social-popup-list u-mh-auto">{children}</ul>
-
         {isPopupVisible && (
-          <button
-            className="social-popup-bg"
-            onClick={closePopup}
-            onFocus={closePopup}
-            tabIndex={0}
-          >
-            <span className="u-visually-hidden">Closing menu...</span>
-          </button>
+          <>
+            <ul className="social-popup-list u-mh-auto">{children}</ul>
+
+            <button
+              className="social-popup-bg"
+              onClick={closePopup}
+              onFocus={closePopup}
+              tabIndex={0}
+            >
+              <span className="u-visually-hidden">Closing menu...</span>
+            </button>
+          </>
         )}
       </div>
     </div>
