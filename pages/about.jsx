@@ -1,9 +1,6 @@
 import Quotes from "/data/quotes.json";
-import {
-  songkickLink,
-  bandsintownLink,
-  facebookEventsLink,
-} from "/components/layout/components/ShowsSection";
+import showURLs from "/data/shows.json";
+const { bandsintownLink, songkickLink, facebookEventsLink } = showURLs;
 
 import DefaultLayout from "/components/layout/DefaultLayout";
 

@@ -1,35 +1,57 @@
-import Upcoming from "/data/shows.json";
+import { useEffect, useState } from "react";
+
+import showURLs from "/data/shows.json";
+const { bandsintownApiUrl, bandsintownLink } = showURLs;
 
 import ShowTile from "/components/layout/components/ShowTile";
 
-export const songkickLink =
-  "https://www.songkick.com/artists/10227128-welcoming";
-export const bandsintownLink = "https://www.bandsintown.com/a/15509125";
-export const facebookEventsLink =
-  "https://www.facebook.com/thewelcomingmusic/events";
-
 export default function ShowsSection() {
-  if (!Upcoming) return null;
+  const [upcoming, setUpcoming] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch(bandsintownApiUrl, {
+        next: { revalidate: 86400 },
+      });
+      let data;
+
+      if (!response.ok) {
+        console.log("error: bandsintown API down or no upcoming shows");
+        return null;
+      }
+
+      data = await response.json();
+      if (data?.length > 4) data.length = 4;
+      setUpcoming(data);
+    }
+    fetchData();
+  }, []);
+
+  if (!upcoming || !upcoming.length) return null;
 
   return (
     <section className="shows-section u-text-c">
       <h2 className="u-title u-mb-xxs">Upcoming events</h2>
       <p className="u-mb-lg">
         Powered by{" "}
-        <a href={songkickLink} target="_blank">
-          Songkick
+        <a href={bandsintownLink} target="_blank">
+          Bandsintown
         </a>
       </p>
 
       <ul className="shows-list">
-        {Upcoming.map((show, i) => (
+        {upcoming.map((show, i) => (
           <ShowTile
-            date={show.date}
-            venue={show.venue}
-            city={show.city}
-            href={show.link}
+            date={new Date(show.datetime).toLocaleDateString("en-US", {
+              weekday: "short",
+              month: "short",
+              day: "numeric",
+            })}
+            venue={show.venue.name}
+            city={show.venue.location}
+            href={show.url}
             index={i}
-            key={show.date}
+            key={show.id}
           />
         ))}
       </ul>

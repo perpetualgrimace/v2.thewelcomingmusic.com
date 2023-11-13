@@ -1,20 +1,6 @@
-[
-  {
-    "date": "November 16",
-    "venue": "The Odd",
-    "city": "Asheville, NC",
-    "link": "https://www.songkick.com/concerts/41387471-challenger-deep-at-odd"
-  },
-  {
-    "date": "November 17",
-    "venue": "Lily’s Snack Bar",
-    "city": "Boone, NC",
-    "link": "https://www.songkick.com/concerts/41406956-challenger-deep-at-lilys-snack-bar"
-  },
-  {
-    "date": "November 18",
-    "venue": "Monstercade",
-    "city": "Winston Salem, NC",
-    "link": "https://www.songkick.com/concerts/41406962-challenger-deep-at-monstercade"
-  }
-]
+{
+  "bandsintownApiUrl": "https://rest.bandsintown.com/artists/The%20Welcoming/events?app_id=0b7393079f2b9580f1ad809ea91ebb9b",
+  "bandsintownLink": "https://www.bandsintown.com/a/15509125",
+  "songkickLink": "https://www.songkick.com/artists/10227128-welcoming",
+  "facebookEventsLink": "https://www.facebook.com/thewelcomingmusic/events"
+}
