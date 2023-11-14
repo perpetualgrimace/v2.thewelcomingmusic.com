@@ -17,8 +17,9 @@ export default function Stat(props) {
           {preValue} {HiddenColon()}
         </span>
       )}
-      <strong className="stat-value">{value} </strong>
-      <span className="stat-label"> {label}</span>
+      <strong className="stat-value">
+        {value} <span className="stat-label">{label}</span>
+      </strong>
       {clarificationText && (
         <span className="u-visually-hidden"> {clarificationText}</span>
       )}

@@ -5,4 +5,8 @@
   z-index: 1;
   margin-left: -2px;
   margin-right: -2px;
+
+  &:not(:last-child) {
+    margin-bottom: 2px;
+  }
 }

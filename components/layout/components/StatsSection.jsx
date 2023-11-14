@@ -1,7 +1,5 @@
 import Stats from "/data/stats.json";
 
-import loadIcon from "/helpers/loadIcon";
-
 import Stat from "/components/layout/components/Stat";
 import StatTile from "/components/layout/components/StatTile";
 
