@@ -1,6 +1,11 @@
 .quotes-section {
-  padding-top: $sp-lg;
+  padding-top: $sp-xl;
   z-index: 1;
+
+  .epk-wrapper &,
+  .about-wrapper & {
+    @include section-gradient;
+  }
 
   &:not(:last-child) {
     margin-bottom: -4rem !important;

@@ -4,8 +4,11 @@ import DefaultLayout from "/components/layout/DefaultLayout";
 
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
+import PressSection from "/components/layout/components/PressSection";
 import QuotesSection from "/components/layout/components/QuotesSection";
+import ShowsSection from "/components/layout/components/ShowsSection";
 import StatsSection from "/components/layout/components/StatsSection";
+import StationsSection from "/components/layout/components/StationsSection";
 
 export default function EPK() {
   return (
@@ -29,7 +32,9 @@ export default function EPK() {
       </ImgTextSection>
 
       <StatsSection />
-
+      <StationsSection />
+      <ShowsSection />
+      <PressSection />
       <QuotesSection quotes={Quotes.epk} />
     </DefaultLayout>
   );

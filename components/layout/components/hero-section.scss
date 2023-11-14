@@ -45,6 +45,10 @@
     padding-bottom: $sp-xxl;
   }
 
+  .hero-subhead {
+    letter-spacing: 8px;
+  }
+
   @media (max-width: 665px) {
     min-height: calc(100vh - #{$navbar-height});
     display: flex;

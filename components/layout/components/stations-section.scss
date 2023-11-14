@@ -1,0 +1,21 @@
+.stations-section {
+  @include section-gradient;
+  padding-top: $sp-xl;
+  padding-bottom: $sp-lg;
+
+  &:not(:last-child) {
+    margin-bottom: 2px;
+  }
+}
+
+.station-item {
+  display: inline-block;
+
+  &:not(:last-child):after {
+    content: "•";
+    display: inline;
+    padding-left: $sp-xs;
+    padding-right: $sp-xs;
+    color: $peach;
+  }
+}
