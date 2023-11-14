@@ -21,7 +21,7 @@ export default function SocialPopup(props) {
   }, [isPopupVisible]);
 
   return (
-    <div>
+    <>
       <li className="social-item">
         <button
           className="social-link light-theme"
@@ -65,6 +65,6 @@ export default function SocialPopup(props) {
           </>
         )}
       </div>
-    </div>
+    </>
   );
 }
