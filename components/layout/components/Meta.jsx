@@ -33,6 +33,8 @@ export default function Meta(props) {
       />
 
       <meta property="og:image" content={defaultImgUrl} />
+      <meta property="og:image:secure_url" content={defaultImgUrl} />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta name="twitter:image" content={defaultImgUrl} />
       <meta name="twitter:card" content="summary_large_image" />
 
