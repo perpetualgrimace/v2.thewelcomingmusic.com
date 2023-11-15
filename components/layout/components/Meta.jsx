@@ -29,7 +29,7 @@ export default function Meta(props) {
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
-        content={`https://thewelcomingmusic.com${useRouter().pathname}`}
+        content={`${baseUrl}${useRouter().pathname}`}
       />
       <meta property="og:image" content={defaultImgUrl} />
       <meta name="twitter:image" content={defaultImgUrl} />
@@ -46,8 +46,9 @@ export default function Meta(props) {
   );
 }
 
+const baseUrl = "https://thewelcomingmusic.com";
 const defaultTitle = "The Welcoming";
-const defaultImgUrl = "/hero/home-hero-1200w.jpg";
+const defaultImgUrl = `${baseUrl}/hero/home-hero-1200w.jpg`;
 const defaultDescription =
   "Genre-bending rock and/or metal band from Asheville, NC. We mix big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes.";
 
