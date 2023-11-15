@@ -5,6 +5,7 @@ import DefaultLayout from "/components/layout/DefaultLayout";
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
 import PressSection from "/components/layout/components/PressSection";
+import GallerySection from "/components/layout/components/GallerySection";
 import QuotesSection from "/components/layout/components/QuotesSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
 import StatsSection from "/components/layout/components/StatsSection";
@@ -14,7 +15,6 @@ export default function EPK() {
   return (
     <DefaultLayout slug="epk" title="Press kit">
       <HeroSection title="Press Kit" pageSlug="epk" />
-
       <ImgTextSection title="You won’t be bored" imgSrc="thumbnail/epk-1">
         <p>
           The Welcoming is a genre-bending rock and/or metal band from
@@ -30,11 +30,11 @@ export default function EPK() {
           been played on the air in multiple countries.
         </p>
       </ImgTextSection>
-
       <StatsSection />
       <StationsSection />
-      <ShowsSection />
       <PressSection />
+      <GallerySection />
+      <ShowsSection />
       <QuotesSection quotes={Quotes.epk} />
     </DefaultLayout>
   );

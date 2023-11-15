@@ -7,7 +7,10 @@ export default function StationsSection() {
 
       <ul className="station-list u-text-l-c">
         {stations.map((station) => (
-          <li className="station-item u-font-md u-mb-sm">
+          <li
+            className="station-item u-font-md u-mb-sm"
+            key={station.name}
+          >
             <strong>{station.name}</strong> ({station.country})
           </li>
         ))}

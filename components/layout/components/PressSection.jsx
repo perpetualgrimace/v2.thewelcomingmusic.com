@@ -32,7 +32,7 @@ export default function PressSection() {
 
 function generatePressItem(format, url, title, date) {
   return (
-    <li className="press-item">
+    <li className="press-item" key={title}>
       <span className="press-format u-title u-font-sm u-block u-mb-sm">
         {format !== "Album review" ? `${format} review` : format}
       </span>
