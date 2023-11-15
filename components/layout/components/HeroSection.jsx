@@ -28,6 +28,7 @@ export default function HeroSection(props) {
             /hero/${pageSlug}-hero-vertical-800w.jpg 800w
           `}
             draggable="false"
+            loading="lazy"
           />
           <source
             media="(min-width:666px)"
@@ -36,11 +37,13 @@ export default function HeroSection(props) {
             /hero/${pageSlug}-hero-2400w.jpg 2400w
           `}
             draggable="false"
+            loading="lazy"
           />
           <img
             src="/hero/${pageSlug}-hero-1200w.jpg"
             alt=""
             draggable="false"
+            loading="lazy"
           />
         </picture>
       ) : (

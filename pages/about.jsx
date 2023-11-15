@@ -2,16 +2,20 @@ import Quotes from "/data/quotes.json";
 import showURLs from "/data/shows.json";
 const { bandsintownLink, songkickLink, facebookEventsLink } = showURLs;
 
-import DefaultLayout from "/components/layout/DefaultLayout";
+import { setTitle } from "/components/layout/components/Meta";
 
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
 import MusiciansSection from "/components/layout/components/MusiciansSection";
 import QuotesSection from "/components/layout/components/QuotesSection";
 
+const description =
+  "The Welcoming is a genre-bending rock and/or metal band from Asheville, NC. With a sound that mixes big riffs, soaring vocal melodies, and just enough technicality to keep you on your toes, we make music for fans of bands like Thrice, Cave In, A Perfect Circle, and Coheed & Cambria.";
+
 export default function About() {
   return (
-    <DefaultLayout slug="about" title="About">
+    <>
+      {setTitle("About")}
       <HeroSection title="About The Welcoming" pageSlug="about" />
       <ImgTextSection
         title="Don’t call us a p**g band"
@@ -50,7 +54,7 @@ export default function About() {
       </ImgTextSection>
 
       <QuotesSection quotes={Quotes.about} />
-    </DefaultLayout>
+    </>
   );
 }
 

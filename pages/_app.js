@@ -1,6 +1,12 @@
 import "/styles/global.scss";
 import "/components/_components.scss";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import DefaultLayout from "/components/layout/DefaultLayout";
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <DefaultLayout>
+      <Component {...pageProps} />
+    </DefaultLayout>
+  );
 }

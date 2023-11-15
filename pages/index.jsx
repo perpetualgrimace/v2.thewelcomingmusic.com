@@ -3,8 +3,6 @@ import SocialLinks from "/data/socialLinks.json";
 import NeptuneLinks from "/data/neptuneLinks.json";
 import DecayedRemadeLinks from "/data/decayedRemadeLinks.json";
 
-import DefaultLayout from "/components/layout/DefaultLayout";
-
 import HeroSection from "/components/layout/components/HeroSection";
 import ShowsSection from "/components/layout/components/ShowsSection";
 import AlbumSection from "/components/layout/components/AlbumSection";
@@ -15,7 +13,7 @@ import SocialLinkList from "/components/common/SocialLinkList";
 
 export default function Home() {
   return (
-    <DefaultLayout slug="home">
+    <>
       <HeroSection
         title="Exploring the gray area between rock and metal"
         subhead="In Western NC and beyond"
@@ -61,6 +59,6 @@ export default function Home() {
         title="Decayed | Remade appreciation"
         quotes={Quotes["decayed-remade"]}
       />
-    </DefaultLayout>
+    </>
   );
 }

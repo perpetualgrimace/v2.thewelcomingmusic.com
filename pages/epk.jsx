@@ -1,6 +1,9 @@
 import Quotes from "/data/quotes.json";
 
-import DefaultLayout from "/components/layout/DefaultLayout";
+import {
+  setTitle,
+  setDescription,
+} from "/components/layout/components/Meta";
 
 import HeroSection from "/components/layout/components/HeroSection";
 import ImgTextSection from "/components/layout/components/ImgTextSection";
@@ -13,7 +16,8 @@ import StationsSection from "/components/layout/components/StationsSection";
 
 export default function EPK() {
   return (
-    <DefaultLayout slug="epk" title="Press kit">
+    <>
+      {setTitle("Press kit")}
       <HeroSection title="Press Kit" pageSlug="epk" />
       <ImgTextSection title="You won’t be bored" imgSrc="thumbnail/epk-1">
         <p>
@@ -36,6 +40,6 @@ export default function EPK() {
       <GallerySection />
       <ShowsSection />
       <QuotesSection quotes={Quotes.epk} />
-    </DefaultLayout>
+    </>
   );
 }
