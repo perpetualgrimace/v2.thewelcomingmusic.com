@@ -7,6 +7,8 @@ export default function Meta(props) {
     <Head>
       <meta charSet="utf-8" />
       <title key="title">{defaultTitle}</title>
+      <meta key="og:title" property="og:title" content={defaultTitle} />
+      <meta key="x:title" name="twitter:title" content={defaultTitle} />
 
       <meta
         name="viewport"
@@ -59,8 +61,16 @@ export function setTitle(title) {
   return (
     <Head>
       <title key="title">{generateTitle(title)}</title>
-      <meta property="og:title" content="The Rock" />
-      <meta name="twitter:title" content="European Travel Destinations" />
+      <meta
+        key="og:title"
+        property="og:title"
+        content={generateTitle(title)}
+      />
+      <meta
+        key="x:title"
+        name="twitter:title"
+        content={generateTitle(title)}
+      />
     </Head>
   );
 }
