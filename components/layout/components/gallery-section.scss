@@ -5,12 +5,34 @@
 
 .asset-list {
   z-index: 1;
-  column-width: 16rem;
   column-gap: 4px;
 
-  @media (max-width: 665px) {
+  // horizontal overflow layout
+  @media (max-width: 399px) {
+    display: flex;
+    flex-wrap: none;
+    overflow-x: auto;
+
+    .asset-item {
+      flex: 1 0 16rem;
+    }
+    .asset-figure,
+    .asset-link,
+    .asset-img {
+      height: 100%;
+    }
+    .asset-img {
+      object-fit: cover;
+    }
+  }
+
+  // column layout
+  @media (min-width: 400px) and (max-width: 665px) {
     column-width: auto;
     columns: 2;
+  }
+  @media (min-width: 666px) and (max-width: 1399px) {
+    column-width: 16rem;
   }
   @media (min-width: 1400px) {
     column-width: auto;
