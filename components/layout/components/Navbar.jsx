@@ -106,15 +106,9 @@ export default function Navbar() {
             <li key={link?.label} className="navbar-menu-item">
               <Link
                 href={link?.route}
-                className={`navbar-menu-link${
-                  link?.isButton && link?.route !== currRoute
-                    ? " button"
-                    : ""
-                }`}
+                className="navbar-menu-link"
                 aria-current={checkRoute(link?.route, currRoute)}
-                onClick={() =>
-                  link?.route === currRoute && setMenuIsOpen(false)
-                }
+                onClick={() => setMenuIsOpen(false)}
               >
                 {link?.label}
               </Link>
