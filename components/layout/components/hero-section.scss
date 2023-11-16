@@ -54,9 +54,12 @@
     display: flex;
     flex-direction: column;
 
+    .social-link-list {
+      text-align: right;
+    }
     .social-link {
-      width: max-content;
-      margin-left: auto;
+      display: inline-block;
+      width: auto;
     }
 
     .hero-title {
