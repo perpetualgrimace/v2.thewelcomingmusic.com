@@ -2,17 +2,5 @@
   "name": "The Welcoming",
   "short_name": "The Welcoming",
   "background_color": "#0F0819",
-  "theme_color": "#0F0819",
-  "icons": [
-    {
-      "src": "/favicon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/favicon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ]
+  "theme_color": "#0F0819"
 }

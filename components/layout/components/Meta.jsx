@@ -38,9 +38,7 @@ export default function Meta(props) {
       <meta name="twitter:image" content={defaultImgUrl} />
       <meta name="twitter:card" content="summary_large_image" />
 
-      <link rel="icon" href="/favicon.ico" sizes="any" />
-      <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      <link rel="icon" href="favicon.ico" sizes="any" />
       <link rel="manifest" href="/manifest.json" />
       <meta name="theme-color" content="#0F0819" />
 
