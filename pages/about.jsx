@@ -21,13 +21,7 @@ export default function About() {
         title="Don’t call us a p**g band"
         imgSrc="thumbnail/about-1"
       >
-        <p>
-          The Welcoming is a genre-bending rock and/or metal band from
-          Asheville, NC. With a sound that mixes big riffs, soaring vocal
-          melodies, and just enough technicality to keep you on your toes,
-          we make music for fans of bands like Thrice, Cave In, A Perfect
-          Circle, and Coheed & Cambria.
-        </p>
+        <p>{description}</p>
       </ImgTextSection>
 
       <MusiciansSection />
