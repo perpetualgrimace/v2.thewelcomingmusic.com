@@ -1,17 +1,17 @@
 {
   "neptune": {
     "releaseDate": "October 2023",
-    "spotifyPlays": "3K",
-    "bandcampSales": "21",
+    "spotifyPlays": "4.6K",
+    "bandcampSales": "23",
     "topTrack": {
       "title": "Song and Memory",
-      "spotifyPlays": "600"
+      "spotifyPlays": "900"
     }
   },
   "decayedRemade": {
     "releaseDate": "October 2021",
-    "spotifyPlays": "43K",
-    "bandcampSales": "26",
+    "spotifyPlays": "45K",
+    "bandcampSales": "27",
     "topTrack": {
       "title": "Loop",
       "spotifyPlays": "5.3K"
