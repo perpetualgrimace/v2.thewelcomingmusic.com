@@ -1,11 +1,11 @@
 {
   "neptune": {
     "releaseDate": "October 2023",
-    "spotifyPlays": "4.6K",
-    "bandcampSales": "23",
+    "spotifyPlays": "6.6K",
+    "bandcampSales": "123",
     "topTrack": {
       "title": "Song and Memory",
-      "spotifyPlays": "900"
+      "spotifyPlays": "2.4K"
     }
   },
   "decayedRemade": {
@@ -18,7 +18,7 @@
     }
   },
   "followers": {
-    "spotifyListeners": "575",
+    "spotifyListeners": "1K",
     "twitterFollowers": "1.9K",
     "facebookFollowers": "1.3K",
     "instagramFollowers": "1K"
