@@ -19,6 +19,7 @@ export default function GallerySection() {
                   className="asset-img"
                   file={`thumbnail/gallery/${asset.thumbnail}`}
                   extension="jpg"
+                  loading="eager"
                 />
                 <span className="asset-link-text u-font-sm">
                   Download on Dropbox.com
