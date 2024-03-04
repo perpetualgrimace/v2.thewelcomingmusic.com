@@ -5,7 +5,7 @@ import BandcampIcon from "/components/icons/social/BandcampIcon.svg";
 import SocialLink from "/components/common/SocialLink";
 
 export default function VideoSection(props) {
-  const { videoUrl, bgImgSrc, title, subhead } = props;
+  const { embedUrl, videoUrl, bgImgSrc, title, subhead } = props;
   return (
     <section className="video-section padded-section">
       <div className="video-section-caption">
@@ -29,7 +29,7 @@ export default function VideoSection(props) {
           className="video-iframe"
           width="560"
           height="315"
-          src={videoUrl}
+          src={embedUrl}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

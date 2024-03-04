@@ -43,7 +43,8 @@ export default function Home() {
       <VideoSection
         title="The Making of Neptune"
         subhead="Docuseries"
-        videoUrl="https://www.youtube.com/embed/kp-Ybvr60W4?si=A6gfbWqHkW3m_5Fn"
+        videoUrl="https://www.youtube.com/watch?v=kp-Ybvr60W4&list=PL2OXkh0m_R5ykVrouKOwIC-gTso42KaLB"
+        embedUrl="https://www.youtube.com/embed/kp-Ybvr60W4?si=A6gfbWqHkW3m_5Fn"
         bgImgSrc="neptune-purple"
       />
 
