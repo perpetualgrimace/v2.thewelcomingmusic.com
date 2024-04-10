@@ -1,0 +1,13 @@
+.merch-section {
+  padding-top: $sp-xl;
+  margin-bottom: $sp-xl !important;
+}
+
+.merch-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: calc(-3px - #{$sp-md});
+  margin-right: calc(-3px - #{$sp-md});
+  margin-bottom: -2px;
+}

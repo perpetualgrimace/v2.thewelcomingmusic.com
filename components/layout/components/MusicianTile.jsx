@@ -14,7 +14,7 @@ export default function MusicianTile(props) {
         alt={`${name} playing ${role} on stage`}
       />
       <span className="musician-tile-text">
-        <h3 className="musicain-name u-title u-font-sm u-mb-0">{name}</h3>
+        <h3 className="musician-name u-title u-font-sm u-mb-0">{name}</h3>
         <p className="musician-role u-mb-md">{role}</p>
         <p className="musician-bio u-mb-xs">{bio}</p>
         <a

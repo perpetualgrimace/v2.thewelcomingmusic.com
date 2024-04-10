@@ -8,6 +8,7 @@ import ShowsSection from "/components/layout/components/ShowsSection";
 import AlbumSection from "/components/layout/components/AlbumSection";
 import QuotesSection from "/components/layout/components/QuotesSection";
 import VideoSection from "/components/layout/components/VideoSection";
+import MerchSection from "/components/layout/components/MerchSection";
 
 import SocialLinkList from "/components/common/SocialLinkList";
 
@@ -60,6 +61,8 @@ export default function Home() {
         title="Decayed | Remade appreciation"
         quotes={Quotes["decayed-remade"]}
       />
+
+      <MerchSection />
     </>
   );
 }
