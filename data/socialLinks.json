@@ -10,12 +10,6 @@
     "icon": "Bandcamp"
   },
   {
-    "href": "https://www.twitter.com/the_welcoming",
-    "label": "Get trolled on Twitter",
-    "smallText": "(we don't call it X)",
-    "icon": "Twitter"
-  },
-  {
     "href": "https://www.instagram.com/thewelcomingmusic",
     "label": "Photos & videos on Instagram",
     "icon": "Instagram"
@@ -26,8 +20,13 @@
     "icon": "YouTube"
   },
   {
+    "href": "https://thewelcoming.bsky.social",
+    "label": "Get trolled on Bluesky",
+    "icon": "Bluesky"
+  },
+  {
     "href": "https://www.facebook.com/thewelcomingmusic",
-    "label": "Leftovers on Facebook",
+    "label": "Facebook exists",
     "icon": "Facebook"
   }
 ]

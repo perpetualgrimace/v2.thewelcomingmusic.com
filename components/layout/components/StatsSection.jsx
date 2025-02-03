@@ -43,13 +43,7 @@ export default function StatsSection() {
             Icon="Spotify"
             value={spotifyListeners}
             label="monthly listeners"
-            clarificationText="on Spotify"
-          />
-          <Stat
-            Icon="Twitter"
-            value={twitterFollowers}
-            label="followers"
-            clarificationText="on Twitter"
+            clarificationText="Spotify high score"
           />
           <Stat
             Icon="Facebook"
