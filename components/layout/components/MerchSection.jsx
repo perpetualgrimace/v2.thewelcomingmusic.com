@@ -17,13 +17,13 @@ export default function MerchSection() {
         </a>
       </p>
       <ul className="merch-list">
-        {Merch.map((item) => (
+        {Merch.map((item, i) => (
           <MerchTile
             label={item.label}
             subhead={item.subhead}
             link={item.link}
             imgSrc={item.imgSrc}
-            key={item.name}
+            key={i}
           />
         ))}
       </ul>
